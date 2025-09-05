@@ -1,0 +1,26 @@
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-blue-950: rgb(20, 23, 46);
+  --color-blue-900: rgb(22, 25, 50);
+  --color-blue-850: rgb(30, 33, 63);
+  --color-blue-100: rgb(215, 224, 255);
+  --color-blue-50: rgb(239, 241, 250);
+  --color-grey-400: rgb(187, 189, 203);
+  --color-grey-200: rgb(228, 226, 226);
+  --color-cyan-300: rgb(112, 243, 248);
+  --color-red-400: rgb(248, 112, 112);
+  --color-purple-400: rgb(216, 129, 248);
+  --gradient: linear-gradient(135deg, #0e112a, #2e325a);
+
+  --logo-color: var(--color-blue-100);
+
+  --color-primary-red: var(--color-red-400);
+  --color-primary-cyan: var(--color-cyan-300);
+  --color-primary-purple: var(--color-purple-400);
+
+  --color-primary: var(--color-red-400);
+}
+
+body {
+  background-color: var(--color-blue-850);
+}

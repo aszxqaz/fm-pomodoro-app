@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("/fonts/KumbhSans/KumbhSans.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("/fonts/RobotoSlab/RobotoSlab.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/fonts/SpaceMono/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/fonts/SpaceMono/SpaceMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+:root {
+  --ff-sans: "Kumbh Sans", sans-serif;
+  --ff-serif: "Roboto Slab", serif;
+  --ff-mono: "Space Mono", monospace;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-base: var(--ff-sans);
+}
+
+body {
+  font-family: var(--ff-base);
+}
