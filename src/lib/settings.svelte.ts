@@ -65,34 +65,17 @@ export class Duration {
   }
 
   set pomodoro(value: number) {
-    if (value <= this.#longBreak) {
-      throw new Error(
-        "Pomodoro length can not be less than or equal to the long break"
-      );
-    }
+    if (value <= this.#longBreak) return;
     this.#pomodoro = value;
   }
 
   set shortBreak(value: number) {
-    if (value >= this.#longBreak) {
-      throw new Error(
-        "Short break can not be less than or equal to the long break"
-      );
-    }
+    if (value <= 0 || value >= this.#longBreak) return;
     this.#shortBreak = value;
   }
 
   set longBreak(value: number) {
-    if (value >= this.#pomodoro) {
-      throw new Error(
-        "Long break can not be more than or equal to the pomodoro"
-      );
-    }
-    if (value <= this.#shortBreak) {
-      throw new Error(
-        "Long break can not be less than or equal to the short break"
-      );
-    }
+    if (value >= this.#pomodoro || value <= this.#shortBreak) return;
     this.#longBreak = value;
   }
 }
